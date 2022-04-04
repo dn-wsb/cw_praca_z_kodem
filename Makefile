@@ -1,6 +1,0 @@
-file:
-	pip install -r requirements.txt
-run:
-	flask run
-test:
-	pylint app.py
