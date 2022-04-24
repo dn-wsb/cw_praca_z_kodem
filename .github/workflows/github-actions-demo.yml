@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: pip install pytest
-      - run: pytest
+      - run: pytest test_sample.py
 
