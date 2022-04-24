@@ -4,6 +4,8 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+        name: check the repository
       - run: pip install pytest
       - run: pytest test_sample.py
 
