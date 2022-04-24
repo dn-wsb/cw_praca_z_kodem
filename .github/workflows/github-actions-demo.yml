@@ -1,17 +1,8 @@
-name: My first Github Workflow
+name: GitHub Actions Demo
 on: [push]
 jobs:
-    versions:
-        runs-on: ubuntu-latest
-        steps:
-           - docker -v
-           - python3 -V
-    Test:
-        runs-on: ubuntu-latest
-        steps:
-           - pylint /home/student/dn-wsb/cw_praca_z_kodem/app.py
-           - echo "Success"
-    image:
-        runs-on: ubuntu-latest
-        steps:
-           - docker build --tag test-flask-app .
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: pytest
+
